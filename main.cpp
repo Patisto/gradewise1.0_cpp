@@ -71,7 +71,7 @@ int main(){
         cout << "Maximum possible score for " << components[i].name << ": ";
         cin >> components[i].maxScore;
 
-        // JS Logic: (score / max) * weight
+        // Logic: (score / max) * weight
         components[i].contribution = (components[i].score / components[i].maxScore) * components[i].weight;
         totalSecured += components[i].contribution;
     }
