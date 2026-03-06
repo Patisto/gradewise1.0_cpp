@@ -25,5 +25,21 @@ string getLetterGrade(double total) {
     return "F";
 }
 int main(){
+    string courseName;
+    int numComponents;
+    double totalWeight = 0;
+    double totalSecured = 0;
+    vector<Component> components;
+
+    cout << "==========================================" << endl;
+    cout << "      GradeWise MW - Code Collective      " << endl;
+    cout << "==========================================" << endl;
+
+    cout << "Enter Course Name: ";
+    getline(cin, courseName);
+
+    cout << "How many components (e.g., 2 Tests + 1 Exam = 3)? ";
+    cin >> numComponents;
+
     return 0;
 }
