@@ -41,5 +41,24 @@ int main(){
     cout << "How many components (e.g., 2 Tests + 1 Exam = 3)? ";
     cin >> numComponents;
 
+     // Phase 1: Setup and Weight Validation
+    for (int i = 0; i < numComponents; i++) {
+        Component c;
+        cout << "\n--- Component " << i + 1 << " ---" << endl;
+        cout << "Name (e.g., Test 1): ";
+        cin.ignore();
+        getline(cin, c.name);
+        cout << "Weight (%) for " << c.name << ": ";
+        cin >> c.weight;
+        
+        totalWeight += c.weight;
+        components.push_back(c);
+    }
+
+    if (totalWeight != 100) {
+        cout << "\nERROR: Total weight must equal 100%. Current total: " << totalWeight << "%" << endl;
+        return 1; 
+    }
+
     return 0;
 }
