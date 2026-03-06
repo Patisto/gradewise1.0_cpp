@@ -60,5 +60,21 @@ int main(){
         return 1; 
     }
 
+     // Phase 2: Grade Entry and Calculation
+    cout << "\n==========================================" << endl;
+    cout << "          ENTERING SCORES FOR: " << courseName << endl;
+    cout << "==========================================" << endl;
+
+    for (int i = 0; i < numComponents; i++) {
+        cout << "\nScore for " << components[i].name << ": ";
+        cin >> components[i].score;
+        cout << "Maximum possible score for " << components[i].name << ": ";
+        cin >> components[i].maxScore;
+
+        // JS Logic: (score / max) * weight
+        components[i].contribution = (components[i].score / components[i].maxScore) * components[i].weight;
+        totalSecured += components[i].contribution;
+    }
+
     return 0;
 }
