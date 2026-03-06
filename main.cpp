@@ -76,5 +76,22 @@ int main(){
         totalSecured += components[i].contribution;
     }
 
+     // Phase 3: Final Report
+    cout << fixed << setprecision(2);
+    cout << "\n==========================================" << endl;
+    cout << "             FINAL GRADE REPORT           " << endl;
+    cout << "==========================================" << endl;
+    cout << "Course: " << courseName << endl;
+    
+    for (const auto& c : components) {
+        cout << left << setw(15) << c.name 
+             << ": " << c.contribution << "% (from " << c.weight << "% weight)" << endl;
+    }
+
+    cout << "------------------------------------------" << endl;
+    cout << "TOTAL SECURED: " << totalSecured << "%" << endl;
+    cout << "LETTER GRADE:  " << getLetterGrade(totalSecured) << endl;
+    cout << "==========================================" << endl;
+
     return 0;
 }
