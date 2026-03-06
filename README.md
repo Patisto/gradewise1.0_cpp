@@ -1,7 +1,7 @@
 # GradeWise MW 🎓 (C++ Edition)
 **Clarity in Your Grades — Terminal MVP**
 
-GradeWise MW is a specialized grade calculator designed for Malawian university students. This C++ implementation serves as the backend logic MVP for the larger edutech platform being developed by **Code Collective**.
+GradeWise MW is a specialized grade calculator designed for Malawian university students. This C++ implementation serves as the backend logic MVP for the larger edutech platform.
 
 ## 🚀 Features
 * **Malawian Grading Scale:** Automatic letter grade assignment based on the standard UNIMA/Malawian scale (A, B+, B, C+, C, D+, D, F).
