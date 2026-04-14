@@ -1,3 +1,4 @@
+**Author:  BSC-INF-08-24**   (Patrick Solomon)
 # GradeWise MW 🎓 (C++ Edition)
 **Clarity in Your Grades — Terminal MVP**
 
